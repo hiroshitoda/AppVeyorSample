@@ -1,3 +1,12 @@
 version: 1.0.{build}
 build:
   verbosity: minimal
+
+before_test:
+  - echo before
+
+test_script:
+  - echo test script
+
+after_test:
+  - echo after
